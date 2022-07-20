@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문 01 - if 문 </title>
+</head>
+<body>
+    <div id="text"></div>
+    <script>
+        let age = 8;
+//만약에 ()이 참으로 판별되면 {} 블록을 실행하라.
+// if 가참이면 잼민이만 들어오는 곳입니다. 가 실행 아닐경우 하이 잼민이 실행 아래와 
+//같은 경우는 하이 재민이 실행 . age 는 9 보다 작기때문에. 
+        // 논리 연산자를 사용한 조건부 실행
+        if(age > 9) {
+            console.log('잼민이만 들어오는 곳입니다.');
+        }else {
+            console.log('하이 잼민')
+        }
+// if 문 은 아래처럼 삼향연산자를 이용한 조건부로  쓸수 있다. if = ? , eles : 
+        age > 9 ? console.log('잼민이만 들어오는 곳입니다.') : console.log ('하이 잼민');
+ 
+        text.innerText =`나는  ${age}살  잼민이 오늘만 산다.`;
+        
+       
+
+    </script>
+</body>
+</html>

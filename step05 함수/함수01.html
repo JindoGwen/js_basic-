@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 01</title>
+</head>
+<body>
+
+    <div id="App"></div>
+    <script>
+        function 이름(a ,b ='깼다.' ){
+             console.log (a , b)    
+        }
+         이름('JUN ' , '잔다');
+
+
+         // 함수표현식 변수에 담긴 함수는 호이스팅 되지 않는다.
+         const 이름2 = function(){
+            console.log('난함수')
+         }
+         이름2();
+
+
+         // 화살표 함수 표현식
+         const 이름3 =(a,b) => {
+            console.log(a,b)
+            
+         }
+
+         이름3 ('화살표 함수' ,'아이고');
+    </script>
+</body>
+</html>

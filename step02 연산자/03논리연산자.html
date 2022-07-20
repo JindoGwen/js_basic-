@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자03-논리 연산자</title>
+</head>
+<body>
+    <script>
+        let 참 = true;
+        let 거짓 = false;
+        const a = 'james'
+
+        console.log(참, 거짓);
+        console.log(!참, !거짓); // ! 는 not 부정영산자. 참이 true 였지만 ! 때문에 false 로 바뀜
+        
+        console.log(참 && 거짓, 참 && 참, 거짓 && 거짓 ) // And 연산자. 하나라도 거짓이면 거짓 둘다 참일 때만 참
+        console.log(거짓 || 참, 거짓 || 거짓 , 참 || 거짓 ) //or 또는 연산자 , 하나라도 참이면 참.
+        a ? console.log(a + '진실') : console.log('부정') // a 는 지금 문자가 있으니 참으로 판명
+        a && console.log(a + '진실');
+        
+        if(!a){
+            console.log(a + '진실');
+        }else{
+            console.log('부정');
+        }
+
+        a && console.log(a + '진실');
+        if (a) {
+            console.log(a + '진실');
+        }
+        a || console.log ('부정');
+
+
+
+        const Test = () => {
+            return( 
+                <h1>html로 변환 </h1>
+            )
+        }
+
+    </script> 
+</body>
+</html>
